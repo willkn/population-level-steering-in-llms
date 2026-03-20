@@ -1,0 +1,15 @@
+FIREWALL AUDIT: EXTREME CASES
+
+=== TOP 5 LARGEST FINANCE 'BLIPS' (Correctly Ignored at 0.8 Threshold) ===
+Token: '<|endoftext|>' | Peak Act: 0.00 | Risk: 0.73
+Token: ' often' | Peak Act: 9.66 | Risk: 0.73
+Token: ' as' | Peak Act: 0.00 | Risk: 0.73
+Token: ' reached' | Peak Act: 0.00 | Risk: 0.05
+Token: 'flation' | Peak Act: 0.00 | Risk: 0.05
+
+=== TOP 5 STRONGEST LEGAL SIGNALS (Correctly Terminated at 0.8 Threshold) ===
+Token: ''s' | Peak Act: 13.11 | Risk: 4.59
+Token: ' court' | Peak Act: 0.00 | Risk: 3.68
+Token: ' supreme' | Peak Act: 30.43 | Risk: 3.68
+Token: ' on' | Peak Act: 5.09 | Risk: 3.38
+Token: ' injunction' | Peak Act: 17.60 | Risk: 3.20

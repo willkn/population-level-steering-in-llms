@@ -1,0 +1,64 @@
+Using device: mps
+Loading Pythia model and SAE...
+Loaded pretrained model EleutherAI/pythia-70m-deduped into HookedTransformer
+--- Table 1: Steering Comparison ---\n
+               Method  Coherence  Entropy  P(\n)
+             Baseline   0.999903 4.644608    0.0
+       Single-Feature   0.999894 4.277636    0.0
+           Orthogonal   0.999886 5.645638    0.0
+    Random Population   0.999866 4.604915    0.0
+                  CAA   0.999925 4.780500    0.0
+Population (Thematic)   0.999871 6.718561    0.0
+--- Table 2: Qualitative Examples ---\n
+==================================================
+\nPrompt: 'The main issue to consider is'
+Base:       ' the fact that the majority of the people who are not in the minority of'
++Legal:     " whether the government should be required to pay for the government's failure to pay"
+==================================================
+\nPrompt: 'When evaluating the situation,'
+Base:       " the patient is asked to take a short-cut of the patient's arm"
++Legal:     " the court must determine whether the defendant's claim was barred by the statute of"
+==================================================
+\nPrompt: 'The most important factor is'
+Base:       ' the number of the most important factors. The number of the most important factors'
++Legal:     ' the amount of money that the government has to pay to the government.\n'
+==================================================
+\nPrompt: 'To begin with,'
+Base:       ' the first thing to do is to make the first thing to do is to'
++Legal:     ' the following facts are not applicable to the present case.\n\n1.'
+--- Table 3: Geometric Measures ---\n
+        Steering Type  Projection Ratio  PC1 Alignment
+Population (Centroid)          0.689381       0.264692
+          Single Atom          0.923212      -0.037033
+           Orthogonal          0.287978       0.003751
+--- Table 4: Conditional Independence ---\n
+     Pair Type  Co-activation P(a_i ^ a_j)
+Thematic Pairs                    0.013487
+  Random Pairs                    0.000000
+Roommate Pairs                    0.000000
+--- Figure 2: SNR Boosting ---\n
+SNR Vals: [0.015161924511638954, 1.0909093731669144, 0.34061593606380847, 0.13282809128917514, 0.02513020789045341, 0.03655347613778715, 0.045265562197436514, 0.03596230200715146]
+--- Table 5: Stability over Tau ---\n
+ Tau  Population Size (N)  Coherence  Entropy
+0.05                   84   0.998976 3.559779
+0.10                   38   0.999039 3.406813
+0.15                   25   0.999147 4.117778
+0.20                   17   0.999277 4.151537
+0.25                   10   0.999251 4.005061
+0.50                    2   0.999569 2.925717
+0.75                    1   0.999564 2.093771
+--- Table 6: Top-K Atom Overlap ---\n
+ Top-k  Overlap  Overlap %
+    50        7  14.000000
+   100       18  18.000000
+   150       31  20.666667
+   200       38  19.000000
+   300       64  21.333333
+--- Table 7: Manifold Dimensionality ---\n
+   Domain  Cosine Similarity  PCA Dim (90%)  Distance to Centroid
+  Medical           0.026093             96              0.984592
+    Legal           0.023181            110              0.986204
+Financial           0.024823            117              0.985443
+ Creative           0.022320            103              0.986587
+   Random           0.001075             77              0.994439
+All done!

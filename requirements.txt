@@ -1,0 +1,9 @@
+torch
+numpy
+pandas
+streamlit>=1.40.0
+transformer_lens
+sae_lens
+scikit-learn
+plotly
+tqdm
