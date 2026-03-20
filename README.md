@@ -5,10 +5,24 @@ This repository contains the core implementation and results for the Neural Code
 ## Key Results
 The primary benchmarks for the tuned Pythia-70m model are located in `results/pythia_results_tuned.txt`.
 
-### Summary of Findings
-- **Coherence**: Steering remains stable under alpha scaling without collapse.
-- **Metric Saturation**: Resolved via tuned alpha and similarity thresholds.
-- **Interactive Visualization**: Run the Streamlit app to explore the manifold.
+### Steering Performance (Table 1)
+| Method | Coherence | Entropy |
+| :--- | :--- | :--- |
+| **Baseline** | 0.99990 | 4.64 |
+| **Single-Feature** | 0.99989 | 4.28 |
+| **Orthogonal** | 0.99989 | 5.65 |
+| **CAA** | 0.99993 | 4.78 |
+| **Thematic Pop.** | **0.99987** | **6.72** |
+
+### Manifold Hierarchy (Table 7)
+| Domain | Cosine Sim | PCA Dim (90%) |
+| :--- | :--- | :--- |
+| **Medical** | 0.0261 | 96 |
+| **Legal** | 0.0232 | 110 |
+| **Financial** | 0.0248 | 117 |
+| **Random** | 0.0011 | 77 |
+
+*Note: Thematic Population steering achieves significantly higher Entropy (6.72) than Baseline (4.64) while maintaining near-perfect Coherence, demonstrating robust, non-collapsing steering.*
 
 ## Getting Started
 1. Install dependencies:
